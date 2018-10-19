@@ -14,8 +14,8 @@ test:
   stage: test
   image: itiut/gcc-criterion
   before_script:
-    - apt install -y --no-install-recommends python-pip
-    - pip install gcovr
+    - apt-get update -qq
+    - apt-get install -y -qq gcovr
   script:
     - make test
     - gcovr -sp
