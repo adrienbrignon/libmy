@@ -24,11 +24,12 @@ fclean: clean
 	$(RM) $(NAME)
 	$(RM) $(TEST_BIN)
 
-re: fclean all
-
-tests_run: CFLAGS += -lcriterion -coverage
-tests_run: clean $(OBJS) $(TEST_OBJS)
+test: CFLAGS += -lcriterion -coverage
+test: $(OBJS) $(TEST_OBJS)
 	$(CC) -o $(TEST_BIN) $(OBJS) $(TEST_OBJS) $(CFLAGS)
+	$(MAKE) clean
 	./$(TEST_BIN)
 
-.PHONY: clean fclean re
+re: fclean all
+
+.PHONY: clean fclean test re
