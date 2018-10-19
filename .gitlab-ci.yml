@@ -11,6 +11,12 @@ build:
   script: make
 
 test:
-  image: itiut/gcc-criterion
   stage: test
-  script: make test
+  image: itiut/gcc-criterion
+  before_script:
+    - apt-get install -y --no-install-recommends gcovr
+  script:
+    - make test
+    - gcovr -sp
+  coverage: '/lines: \d+.\d+/'
+

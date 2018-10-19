@@ -27,7 +27,6 @@ fclean: clean
 test: CFLAGS += -lcriterion -coverage
 test: $(OBJS) $(TEST_OBJS)
 	$(CC) -o $(TEST_BIN) $(OBJS) $(TEST_OBJS) $(CFLAGS)
-	$(MAKE) clean
 	./$(TEST_BIN)
 
 re: fclean all
