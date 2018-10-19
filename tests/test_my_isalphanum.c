@@ -2,7 +2,7 @@
 ** EPITECH PROJECT, 2018
 ** libmy
 ** File description:
-** my_isnum unit test.
+** my_isalphanum unit test.
 */
 
 #include "my.h"

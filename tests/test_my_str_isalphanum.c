@@ -2,7 +2,7 @@
 ** EPITECH PROJECT, 2018
 ** libmy
 ** File description:
-** my_str_isupper unit test.
+** my_str_isalphanum unit test.
 */
 
 #include "my.h"

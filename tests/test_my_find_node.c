@@ -2,7 +2,7 @@
 ** EPITECH PROJECT, 2018
 ** libmy
 ** File description:
-** my_apply_on_matching_nodes unit test.
+** my_find_node unit test.
 */
 
 #include "my.h"

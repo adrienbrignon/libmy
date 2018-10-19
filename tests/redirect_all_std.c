@@ -2,7 +2,7 @@
 ** EPITECH PROJECT, 2018
 ** libmy
 ** File description:
-** Redirect outputs to Criterion.
+** Redirect all outputs to Criterion.
 */
 
 #include <criterion/redirect.h>

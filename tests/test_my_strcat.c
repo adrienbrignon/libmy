@@ -2,7 +2,7 @@
 ** EPITECH PROJECT, 2018
 ** libmy
 ** File description:
-** my_strncpy unit test.
+** my_strcat unit test.
 */
 
 #include "my.h"

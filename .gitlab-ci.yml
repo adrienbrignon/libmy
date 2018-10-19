@@ -8,6 +8,7 @@ build:
   artifacts:
     paths:
       - lib/libmy.a
+      - include/my.h
   script: make
 
 test:

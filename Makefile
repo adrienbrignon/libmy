@@ -1,3 +1,10 @@
+##
+## EPITECH PROJECT, 2018
+## libmy
+## File description:
+## The library main Makefile.
+##
+
 CC = gcc
 CFLAGS = -Wall -Wextra -Werror -pedantic -Iinclude
 
