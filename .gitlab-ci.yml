@@ -3,7 +3,7 @@ stages:
   - test
 
 build:
-  image: gcc:latest
+  image: gcc
   stage: build
   artifacts:
     paths:
