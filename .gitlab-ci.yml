@@ -12,7 +12,10 @@ build:
 
 test:
   stage: test
-  image: arthurphilippe/epitech-c-cpp-plain
+  image: itiut/gcc-criterion
+  before_script:
+    - apt install -y --no-install-recommends python-pip
+    - pip install gcovr
   script:
     - make test
     - gcovr -sp
