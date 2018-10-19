@@ -1,0 +1,16 @@
+image: itiut/gcc-criterion
+
+stages:
+  - build
+  - test
+
+build:
+  stage: build
+  artifacts:
+    paths:
+      - lib/libmy.a
+  script: make
+
+test:
+  stage: test
+  script: make test
