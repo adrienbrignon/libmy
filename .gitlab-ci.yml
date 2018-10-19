@@ -1,10 +1,9 @@
-image: itiut/gcc-criterion
-
 stages:
   - build
   - test
 
 build:
+  image: gcc:latest
   stage: build
   artifacts:
     paths:
@@ -12,5 +11,6 @@ build:
   script: make
 
 test:
+  image: itiut/gcc-criterion
   stage: test
   script: make test
