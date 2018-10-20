@@ -13,7 +13,10 @@ build:
 
 test:
   stage: test
-  image: itiut/gcc-criterion
+  image: gcc
+  before_script:
+    - scripts/setup
   script:
     - make test
-
+    - gcovr -sp
+  coverage: '/lines: \d+.\d+/'

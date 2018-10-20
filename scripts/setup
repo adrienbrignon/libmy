@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+# Criterion
+git clone --recursive https://github.com/Snaipe/Criterion criterion
+cd criterion
+mkdir build
+cd build
+cmake -DCMAKE_BUILD_TYPE=RelWithDebInfo -DCMAKE_INSTALL_PREFIX=/usr/local -DCMAKE_INSTALL_LIBDIR=lib ..
+make -j
+make install
+cd ../..
+rm -rf criterion
+echo "Criterion successfully installed."
+
+# gcovr
+apt-get update
+apt-get install -y --no-install-recommends gcovr
+echo "gcovr successfully installed."
