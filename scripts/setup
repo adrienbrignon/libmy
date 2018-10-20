@@ -4,13 +4,12 @@
 apk add gcc make cmake musl-dev gcovr
 
 # Criterion
-git clone --recursive https://github.com/Snaipe/Criterion criterion
-cd criterion
+git clone --recursive -b master https://github.com/Snaipe/Criterion
+cd Criterion
 mkdir build
 cd build
-cmake -DCMAKE_BUILD_TYPE=RelWithDebInfo -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_INSTALL_LIBDIR=lib ..
+cmake -DCMAKE_BUILD_TYPE=RelWithDebInfo -DCMAKE_INSTALL_PREFIX=/usr/local -DCMAKE_INSTALL_LIBDIR=lib ..
 make -j
 make install
-cd ../..
-rm -rf criterion
-echo "Criterion successfully installed."
+cd ../../
+rm -rf Criterion
