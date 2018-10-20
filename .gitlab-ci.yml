@@ -13,10 +13,7 @@ build:
 
 test:
   stage: test
-  image: alpine
-  before_script:
-    - scripts/setup
+  image: itiut/gcc-criterion
   script:
     - make test
-    - gcovr -sp
-  coverage: '/lines: \d+.\d+/'
+
