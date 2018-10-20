@@ -1,15 +1,15 @@
 #!/usr/bin/env sh
 
 # Alpine
-apk add gcc make cmake musl-dev gcovr
+apk add gcc make cmake musl-dev gcovr git
 
 # Criterion
-git clone --recursive -b master https://github.com/Snaipe/Criterion
-cd Criterion
+git clone --recursive -b master https://github.com/Snaipe/Criterion criterion
+cd criterion
 mkdir build
 cd build
 cmake -DCMAKE_BUILD_TYPE=RelWithDebInfo -DCMAKE_INSTALL_PREFIX=/usr/local -DCMAKE_INSTALL_LIBDIR=lib ..
 make -j
 make install
 cd ../../
-rm -rf Criterion
+rm -rf criterion
