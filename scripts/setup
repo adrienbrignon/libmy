@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 
 # Alpine
-apk add gcc make cmake musl-dev gcovr git
+apk add gcc make cmake musl-dev gcovr git g++
 
 # Criterion
 git clone --recursive -b master https://github.com/Snaipe/Criterion criterion
