@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+# Alpine
+apk add gcc make cmake musl-dev gcovr
+
 # Criterion
 git clone --recursive https://github.com/Snaipe/Criterion criterion
 cd criterion
@@ -11,8 +14,3 @@ make install
 cd ../..
 rm -rf criterion
 echo "Criterion successfully installed."
-
-# gcovr
-apt-get update
-apt-get install -y --no-install-recommends gcovr
-echo "gcovr successfully installed."

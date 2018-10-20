@@ -13,7 +13,7 @@ build:
 
 test:
   stage: test
-  image: gcc
+  image: alpine
   before_script:
     - scripts/setup
   script:
