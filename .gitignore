@@ -1,3 +1,6 @@
+# Sublime
+*.sublime-workspace
+
 # Coverage
 *.gcda
 *.gcno
