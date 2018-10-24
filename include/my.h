@@ -31,10 +31,12 @@ void my_apply_on_matching_nodes(linked_list_t *list, void (*f)(), void const *qu
 int my_ispos(int n);
 int my_isneg(int n);
 int my_isnum(char c);
+int my_isprime(int n);
 int my_isalpha(char c);
 int my_isupper(char c);
 int my_islower(char c);
-int my_isprime(int n);
+int my_min(int a, int b);
+int my_max(int a, int b);
 int my_isalphanum(char c);
 int my_isprintable(char c);
 int my_find_prime_sup(int n);
