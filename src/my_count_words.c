@@ -14,9 +14,7 @@ int my_count_words(char const *str)
     for (int i = 0; str[i] != '\0'; i++) {
         if (my_isalphanum(str[i])) {
             continue;
-        }
-
-        if (my_isalpha(str[i + 1]) || my_isnum(str[i + 1])) {
+        } else if (my_isalphanum(str[i + 1])) {
             words++;
         }
     }
