@@ -31,9 +31,10 @@ fclean: clean
 	$(RM) $(NAME)
 	$(RM) $(TEST_BIN)
 
-test: CFLAGS += -lcriterion -coverage
-test: $(OBJS) $(TEST_OBJS)
-	$(CC) -o $(TEST_BIN) $(OBJS) $(TEST_OBJS) $(CFLAGS)
+tests_run: CFLAGS += -coverage
+tests_run: LDFLAGS += -lcriterion
+tests_run: $(OBJS) $(TEST_OBJS)
+	$(CC) $(CFLAGS) -o $(TEST_BIN) $(OBJS) $(TEST_OBJS) $(LDFLAGS)
 	./$(TEST_BIN)
 
 re: fclean all
