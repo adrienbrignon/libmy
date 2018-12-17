@@ -10,13 +10,13 @@
 char *my_revstr(char *str)
 {
     int i = 0;
-    char letter;
     int j = my_strlen(str) - 1;
 
     while (i < j) {
-        letter = str[i];
+        char tmp = str[i];
+
         str[i++] = str[j];
-        str[j--] = letter;
+        str[j--] = tmp;
     }
 
     return str;

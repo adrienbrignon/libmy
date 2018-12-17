@@ -9,31 +9,24 @@
 
 static int is_delimiter(char c)
 {
-    char delimiters[3] = {' ', '+', '-'};
+    char delimiters[6] = {' ', '\t', '\r', '\n', '\f', '\v'};
 
-    for (int i = 0; i < 3; i++) {
-        if (c == delimiters[i]) {
+    for (int i = 0; i < 6; i++)
+        if (c == delimiters[i])
             return 1;
-        }
-    }
 
     return 0;
 }
 
 char *my_str_capitalize(char *str)
 {
-    int i = 0;
-
-    while (str[i] != '\0') {
-        if (i == 0) {
+    for (int i = 0; str[i] != '\0'; i++) {
+        if (i == 0)
             str[i] = my_toupper(str[i]);
-        } else if (is_delimiter(str[i])) {
+        else if (is_delimiter(str[i]))
             str[i + 1] = my_toupper(str[i + 1]);
-        } else {
+        else
             str[i + 1] = my_tolower(str[i + 1]);
-        }
-
-        i++;
     }
 
     return str;

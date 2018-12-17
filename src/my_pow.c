@@ -5,13 +5,12 @@
 ** Compute the power of the specified number (recursively).
 */
 
-int my_compute_power_rec(int nb, int p)
+int my_pow(int nb, int p)
 {
-    if (p == 0) {
+    if (p == 0)
         return 1;
-    } else if (p < 0) {
+    else if (p < 0)
         return 0;
-    }
 
-    return my_compute_power_rec(nb, p - 1) * nb;
+    return my_pow(nb, p - 1) * nb;
 }

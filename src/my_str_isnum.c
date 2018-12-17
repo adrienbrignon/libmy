@@ -9,11 +9,9 @@
 
 int my_str_isnum(char const *str)
 {
-    for (int i = 0; str[i] != '\0'; i++) {
-        if (!my_isnum(str[i])) {
+    for (int i = 0; str[i] != '\0'; i++)
+        if (!my_isnum(str[i]))
             return 0;
-        }
-    }
 
-    return *str == '\0' ? 0 : 1;
+    return *str != '\0';
 }

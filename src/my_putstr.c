@@ -6,10 +6,9 @@
 */
 
 #include "my.h"
+#include <unistd.h>
 
-void my_putstr(char const *str)
+int my_putstr(char const *str)
 {
-    while (*str != '\0') {
-        my_putchar(*str++);
-    }
+    return write(STDOUT_FILENO, str, my_strlen(str) * sizeof *str);
 }

@@ -13,15 +13,13 @@ char *my_strstr(char *str, char const *to_find)
     int j = 0;
 
     while (str[i] != '\0') {
-        if (str[i] == to_find[j]) {
+        if (str[i] == to_find[j])
             j++;
-        } else {
+        else
             j = 0;
-        }
 
-        if (to_find[j] == '\0' && j >= 1) {
+        if (to_find[j] == '\0' && j >= 1)
             return &str[i - j + 1];
-        }
 
         i++;
     }
