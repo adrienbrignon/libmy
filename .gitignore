@@ -2,9 +2,7 @@
 *.sublime-workspace
 
 # Coverage
-*.gcda
-*.gcno
-*.c.gcov
+*.gc*
 
 # Binaries
 /unit-tests
