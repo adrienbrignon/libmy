@@ -9,7 +9,7 @@
 
 int my_sqrt(int nb)
 {
-    for (int n = 0; n < nb; n++)
+    for (int n = 0; n <= nb; n++)
         if (n * n == nb)
             return n;
 

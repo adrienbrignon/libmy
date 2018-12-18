@@ -7,9 +7,9 @@
 
 char *my_strcpy(char *dest, char const *str)
 {
-    int i = 0;
+    int i;
 
-    for (; str[i] != '\0'; i++)
+    for (i = 0; str[i] != '\0'; i++)
         dest[i] = str[i];
 
     dest[i] = '\0';

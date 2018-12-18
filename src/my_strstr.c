@@ -18,7 +18,7 @@ char *my_strstr(char *str, char const *to_find)
         else
             j = 0;
 
-        if (to_find[j] == '\0' && j >= 1)
+        if (to_find[j] == '\0' && j > 0)
             return &str[i - j + 1];
 
         i++;

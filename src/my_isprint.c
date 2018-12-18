@@ -5,7 +5,7 @@
 ** Check if the given character is printable.
 */
 
-int my_isprintable(char c)
+int my_isprint(char c)
 {
-    return !(c < ' ' && c > '~');
+    return c >= ' ' && c <= '~';
 }
