@@ -2,15 +2,15 @@
 ** EPITECH PROJECT, 2018
 ** libmy
 ** File description:
-** my_str_tolower unit test.
+** my_strlwr unit test.
 */
 
 #include "my.h"
 #include <criterion/criterion.h>
 
-Test(unit, my_str_tolower)
+Test(unit, my_strlwr)
 {
     char str[] = "Hello WORLD!";
 
-    cr_assert_str_eq(my_str_tolower(str), "hello world!");
+    cr_assert_str_eq(my_strlwr(str), "hello world!");
 }

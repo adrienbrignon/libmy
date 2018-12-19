@@ -7,11 +7,11 @@
 
 #include "my.h"
 
-char *my_str_tolower(char *str)
+char *my_strupr(char *str)
 {
     for (int i = 0; str[i] != '\0'; i++)
-        if (my_isupper(str[i]))
-            str[i] = my_tolower(str[i]);
+        if (my_islower(str[i]))
+            str[i] = my_toupper(str[i]);
 
     return str;
 }

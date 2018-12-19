@@ -27,5 +27,5 @@ char *my_itoa(int n, char *buf)
 
     buf[i] = '\0';
 
-    return my_revstr(buf);
+    return my_strrev(buf);
 }
