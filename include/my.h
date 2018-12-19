@@ -42,6 +42,7 @@ int my_str_isalphanum(char const *str);
 int my_strcmp(char const *s1, char const *s2);
 int my_strncmp(char const *s1, char const *s2, int n);
 
+long my_labs(long n);
 long my_atol(char const *str);
 
 char *my_revstr(char *str);
