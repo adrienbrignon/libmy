@@ -1,13 +1,11 @@
-# Sublime
+# Binaries
+/unit-tests
+
+# Sublime Text
 *.sublime-workspace
 
 # Coverage
 *.gc*
-
-# Binaries
-/unit-tests
-/lib/*
-!/lib/.gitkeep
 
 # Prerequisites
 *.d
