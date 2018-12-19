@@ -52,6 +52,7 @@ char *my_str_tolower(char *str);
 char *my_ltoa(long n, char *buf);
 char *my_strdup(char const *src);
 char *my_str_capitalize(char *str);
+char *my_strchr(const char *str, char c);
 char *my_strcat(char *dest, char const *src);
 char *my_strcpy(char *dest, char const *src);
 char *my_strstr(char *haystack, char const *needle);
