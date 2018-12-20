@@ -16,4 +16,7 @@
 #include "my_string.h"
 #include "my_math.h"
 
+char *my_itoa(int n, char *buf);
+char *my_ltoa(long n, char *buf);
+
 #endif

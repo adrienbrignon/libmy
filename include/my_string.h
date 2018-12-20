@@ -11,13 +11,12 @@
 #include "my_stddef.h"
 
 int my_strcmp(const char *str1, const char *str2);
+int my_strcspn(const char *str, const char *mask);
 int my_strncmp(const char *str1, const char *str2, my_size_t n);
 
 char *my_strrev(char *str);
 char *my_strupr(char *str);
 char *my_strlwr(char *str);
-char *my_itoa(int n, char *buf);
-char *my_ltoa(long n, char *buf);
 char *my_strdup(char const *src);
 char *my_str_capitalize(char *str);
 char *my_strset(char *str, char c);
