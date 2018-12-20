@@ -5,7 +5,9 @@
 ** Get the given string length.
 */
 
-int my_strlen(char const *str)
+#include "my_string.h"
+
+my_size_t my_strlen(const char *str)
 {
     int i = 0;
 

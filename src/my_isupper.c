@@ -2,7 +2,7 @@
 ** EPITECH PROJECT, 2018
 ** libmy
 ** File description:
-** Check if the given char is in uppercase.
+** Check if the given character is in uppercase.
 */
 
 int my_isupper(char c)

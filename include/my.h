@@ -8,6 +8,11 @@
 #ifndef _MY_H
 #define _MY_H
 
+#include "my_stddef.h"
+#include "my_unistd.h"
+#include "my_stdio.h"
+#include "my_string.h"
+
 void my_putnbr(int n);
 
 char my_tolower(char c);
@@ -44,21 +49,5 @@ int my_strncmp(char const *s1, char const *s2, int n);
 
 long my_labs(long n);
 long my_atol(char const *str);
-
-char *my_strrev(char *str);
-char *my_itoa(int n, char *buf);
-char *my_strupr(char *str);
-char *my_strlwr(char *str);
-char *my_ltoa(long n, char *buf);
-char *my_strdup(char const *src);
-char *my_str_capitalize(char *str);
-char *my_strset(char *str, char c);
-char *my_strchr(const char *str, char c);
-char *my_strrchr(const char *str, char c);
-char *my_strcat(char *dest, char const *src);
-char *my_strcpy(char *dest, char const *src);
-char *my_strstr(char *haystack, char const *needle);
-char *my_strncat(char *dest, char const *src, int n);
-char *my_strncpy(char *dest, char const *src, int n);
 
 #endif

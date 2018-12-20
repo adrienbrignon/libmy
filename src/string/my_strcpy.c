@@ -5,7 +5,7 @@
 ** Copy a string into another.
 */
 
-char *my_strcpy(char *dest, char const *str)
+char *my_strcpy(char *dest, const char *str)
 {
     int i;
 

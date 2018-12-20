@@ -7,8 +7,9 @@
 
 #include "my.h"
 #include <unistd.h>
+#include "my_unistd.h"
 
 int my_putstr(char const *str)
 {
-    return write(STDOUT_FILENO, str, my_strlen(str) * sizeof *str);
+    return write(MY_STDOUT_FILENO, str, my_strlen(str) * sizeof *str);
 }

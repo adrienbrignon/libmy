@@ -5,7 +5,7 @@
 ** Copy the specified amount of characters into another string.
 */
 
-char *my_strncpy(char *dest, char const *src, int n)
+char *my_strncpy(char *dest, const char *src, int n)
 {
     int i;
 

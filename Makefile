@@ -13,7 +13,7 @@ NAME = lib/libmy.a
 
 TEST_NAME = unit-tests
 
-SRCS = $(wildcard src/*.c)
+SRCS = $(wildcard src/*.c) $(wildcard src/**/*.c)
 OBJS = $(SRCS:.c=.o)
 
 TEST_SRCS = $(wildcard tests/*.c)
@@ -25,7 +25,7 @@ $(NAME): $(OBJS)
 	$(AR) rcs $(NAME) $(OBJS)
 
 clean:
-	$(RM) src/*.o src/*.gc*
+	$(RM) src/*.o src/*.gc* src/**/*.o src/**/*.gc*
 	$(RM) test/*.o tests/*.gc*
 
 fclean: clean

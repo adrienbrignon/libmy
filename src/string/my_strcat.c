@@ -7,14 +7,14 @@
 
 #include "my.h"
 
-char *my_strcat(char *dest, char const *src)
+char *my_strcat(char *dest, const char *src)
 {
+    int j;
     int i = 0;
-    int j = 0;
 
     while (dest[i] != '\0')
         i++;
-    for (; src[j] != '\0'; j++)
+    for (j = 0; src[j] != '\0'; j++)
         dest[i + j] = src[j];
 
     dest[i + j] = '\0';

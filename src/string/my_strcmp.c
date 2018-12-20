@@ -5,7 +5,7 @@
 ** Compare two piece of strings together.
 */
 
-int my_strcmp(char const *s1, char const *s2)
+int my_strcmp(const char *s1, const char *s2)
 {
     int i = 0;
 

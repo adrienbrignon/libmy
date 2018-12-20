@@ -7,7 +7,7 @@
 
 #include "my.h"
 
-int my_str_islower(char const *str)
+int my_str_islower(const char *str)
 {
     for (int i = 0; str[i] != '\0'; i++)
         if (!my_islower(str[i]))

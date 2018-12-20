@@ -9,7 +9,7 @@
 #include <stdio.h>
 #include <ctype.h>
 
-int my_str_isalpha(char const *str)
+int my_str_isalpha(const char *str)
 {
     for (int i = 0; str[i] != '\0'; i++)
         if (!my_isalpha(str[i]))

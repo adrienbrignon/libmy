@@ -12,8 +12,8 @@
 
 Test(unit, my_strchr)
 {
-    char *expected = "o world!";
     char *got = my_strchr("Hello world!", 'o');
+    char *expected = "o world!";
 
     cr_assert_str_eq(got, expected);
 }

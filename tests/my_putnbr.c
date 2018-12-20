@@ -7,8 +7,8 @@
 
 #include "my.h"
 #include "tests.h"
-#include <criterion/redirect.h>
 #include <criterion/criterion.h>
+#include <criterion/redirect.h>
 
 Test(unit, my_putnbr, .init = redirect_all_std)
 {
