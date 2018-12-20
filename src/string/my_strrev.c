@@ -9,14 +9,15 @@
 
 char *my_strrev(char *str)
 {
-    int i = 0;
-    int j = my_strlen(str) - 1;
+    long i;
+    long j;
+    my_size_t len = my_strlen(str);
 
-    while (i < j) {
+    for (i = 0, j = len - 1; i < j; i++, j--) {
         char tmp = str[i];
 
-        str[i++] = str[j];
-        str[j--] = tmp;
+        str[i] = str[j];
+        str[j] = tmp;
     }
 
     return str;

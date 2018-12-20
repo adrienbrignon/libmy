@@ -5,9 +5,11 @@
 ** Copy the specified amount of characters into another string.
 */
 
-char *my_strncpy(char *dest, const char *src, int n)
+#include "my_stddef.h"
+
+char *my_strncpy(char *dest, const char *src, my_size_t n)
 {
-    int i;
+    my_size_t i;
 
     for (i = 0; i < n && src[i] != '\0'; i++)
         dest[i] = src[i];

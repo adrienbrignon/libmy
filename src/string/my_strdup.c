@@ -5,9 +5,8 @@
 ** Allocate memory and copy the given string in it.
 */
 
-#include "my.h"
 #include <stdlib.h>
-#include "my_stddef.h"
+#include "my_string.h"
 
 char *my_strdup(const char *src)
 {

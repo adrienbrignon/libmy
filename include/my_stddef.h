@@ -10,4 +10,6 @@
 
 #define MY_NULL (0)
 
+typedef unsigned long my_size_t;
+
 #endif

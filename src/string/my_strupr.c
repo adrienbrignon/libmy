@@ -5,11 +5,12 @@
 ** Convert lowercase characters to uppercase.
 */
 
-#include "my.h"
+#include "my_ctype.h"
+#include "my_stddef.h"
 
 char *my_strupr(char *str)
 {
-    for (int i = 0; str[i] != '\0'; i++)
+    for (my_size_t i = 0; str[i] != '\0'; i++)
         if (my_islower(str[i]))
             str[i] = my_toupper(str[i]);
 

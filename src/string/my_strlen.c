@@ -5,11 +5,11 @@
 ** Get the given string length.
 */
 
-#include "my_string.h"
+#include "my_stddef.h"
 
 my_size_t my_strlen(const char *str)
 {
-    int i = 0;
+    my_size_t i = 0;
 
     while (str[i] != '\0')
         i++;

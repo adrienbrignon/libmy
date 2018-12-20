@@ -8,7 +8,10 @@
 #ifndef MY_STRING_H_
 #define MY_STRING_H_
 
-typedef unsigned long my_size_t;
+#include "my_stddef.h"
+
+int my_strcmp(const char *str1, const char *str2);
+int my_strncmp(const char *str1, const char *str2, my_size_t n);
 
 char *my_strrev(char *str);
 char *my_strupr(char *str);
@@ -23,8 +26,10 @@ char *my_strrchr(const char *str, char c);
 char *my_strcat(char *dest, const char *src);
 char *my_strcpy(char *dest, const char *src);
 char *my_strstr(char *haystack, const char *needle);
-char *my_strncat(char *dest, const char *src, int n);
-char *my_strncpy(char *dest, const char *src, int n);
+char *my_strncat(char *dest, const char *src, my_size_t n);
+char *my_strncpy(char *dest, const char *src, my_size_t n);
 char *my_strpbrk(const char *haystack, const char *list);
+
+my_size_t my_strlen(const char *str);
 
 #endif

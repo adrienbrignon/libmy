@@ -5,7 +5,7 @@
 ** Convert lowercase characters to uppercase.
 */
 
-#include "my.h"
+#include "my_ctype.h"
 
 char *my_strlwr(char *str)
 {

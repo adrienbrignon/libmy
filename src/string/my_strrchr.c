@@ -5,11 +5,13 @@
 ** Find the last ocurrence of the given char on the given string.
 */
 
+#include "my_stddef.h"
+
 char *my_strrchr(const char *str, char c)
 {
-    int last = 0;
+    unsigned long last = 0;
 
-    for (int i = 0; str[i] != '\0'; i++)
+    for (unsigned long i = 0; str[i] != '\0'; i++)
         if (str[i] == c)
             last = i;
 

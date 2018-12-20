@@ -9,7 +9,7 @@
 
 char *my_strset(char *str, char c)
 {
-    for (int i = 0; str[i] != '\0'; i++)
+    for (my_size_t i = 0; str[i] != '\0'; i++)
         str[i] = c;
 
     return str;
