@@ -5,8 +5,8 @@
 ** The library tests header.
 */
 
-#ifndef _MY_TESTS_H
-#define _MY_TESTS_H
+#ifndef MY_TESTS_H_
+#define MY_TESTS_H_
 
 void redirect_all_std(void);
 

@@ -5,8 +5,8 @@
 ** The library main header.
 */
 
-#ifndef _MY_H
-#define _MY_H
+#ifndef MY_H_
+#define MY_H_
 
 #include "my_stddef.h"
 #include "my_unistd.h"
