@@ -9,13 +9,12 @@
 
 char *my_strncat(char *dest, const char *src, my_size_t n)
 {
-    my_size_t i;
-    my_size_t length = my_strlen(dest);
+    char *end = dest + my_strlen(dest);
 
-    for (i = 0 ; i < n && src[i] != '\0'; i++)
-        dest[length + i] = src[i];
+    while (*src != '\0' && n-- > 0)
+        *end++ = *src++;
 
-    dest[length + i] = '\0';
+    *end = '\0';
 
     return dest;
 }
