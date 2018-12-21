@@ -13,4 +13,5 @@ Test(unit, my_atoi)
     cr_assert_eq(my_atoi("0"), 0);
     cr_assert_eq(my_atoi("1"), 1);
     cr_assert_eq(my_atoi("-1"), -1);
+    cr_assert_eq(my_atoi("+1X"), 1);
 }

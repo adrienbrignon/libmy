@@ -12,5 +12,6 @@ Test(unit, my_strdup)
 {
     char *str = my_strdup("I like trains.");
 
+    cr_assert_null(my_strdup(NULL));
     cr_assert_str_eq(str, "I like trains.");
 }

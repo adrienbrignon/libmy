@@ -10,10 +10,13 @@
 
 char *my_strdup(const char *src)
 {
+    if (src == MY_NULL)
+        return MY_NULL;
+
     char *str = malloc(my_strlen(src) + 1);
 
     if (str == MY_NULL)
-        return str;
+        return MY_NULL;
 
     return my_strcpy(str, src);
 }

@@ -8,8 +8,9 @@
 #ifndef MY_STDDEF_H_
 #define MY_STDDEF_H_
 
-#define MY_NULL (0)
+#define MY_NULL ((void *) 0)
 
+typedef signed long my_ssize_t;
 typedef unsigned long my_size_t;
 
 #endif

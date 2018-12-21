@@ -9,8 +9,8 @@
 
 char *my_strpbrk(const char *haystack, const char *list)
 {
-    for (unsigned long i = 0; haystack[i] != '\0'; i++)
-        for (unsigned long j = 0; list[j] != '\0'; j++)
+    for (my_size_t i = 0; haystack[i] != '\0'; i++)
+        for (my_size_t j = 0; list[j] != '\0'; j++)
             if (haystack[i] == list[j])
                 return (char *) &haystack[i];
 

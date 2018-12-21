@@ -11,6 +11,7 @@
 Test(unit, my_isprime)
 {
     cr_assert_eq(my_isprime(0), 0);
+    cr_assert_eq(my_isprime(2), 1);
     cr_assert_eq(my_isprime(6), 0);
     cr_assert_eq(my_isprime(7), 1);
     cr_assert_eq(my_isprime(13), 1);

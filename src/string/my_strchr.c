@@ -5,12 +5,13 @@
 ** Find the first ocurrence of the given char on the given string.
 */
 
+#include "my_stddef.h"
+
 char *my_strchr(const char *str, char c)
 {
-    int i = 0;
+    for (my_size_t i = 0; str[i] != '\0'; i++)
+        if (str[i] == c)
+            return (char *) &str[i];
 
-    while (str[i] != '\0' && str[i] != c)
-        i++;
-
-    return (char *) &str[i];
+    return MY_NULL;
 }

@@ -11,7 +11,6 @@
 #include "my_stddef.h"
 
 int my_strcmp(const char *str1, const char *str2);
-int my_strcspn(const char *str, const char *mask);
 int my_strncmp(const char *str1, const char *str2, my_size_t n);
 
 void *my_memcpy(void *dest, const void *src, my_size_t size);
@@ -33,5 +32,7 @@ char *my_strncpy(char *dest, const char *src, my_size_t n);
 char *my_strpbrk(const char *haystack, const char *list);
 
 my_size_t my_strlen(const char *str);
+my_size_t my_strspn(const char *str, const char *mask);
+my_size_t my_strcspn(const char *str, const char *mask);
 
 #endif

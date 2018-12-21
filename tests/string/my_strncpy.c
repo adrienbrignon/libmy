@@ -10,12 +10,9 @@
 
 Test(unit, my_strncpy)
 {
-    char six[6];
-    char eleven[11];
+    char buf[16];
 
-    my_strncpy(eleven, "Hi", 2);
-    my_strncpy(six, "HelloWorld", 5);
-
-    cr_assert_str_eq(eleven, "Hi");
-    cr_assert_str_eq(six, "Hello");
+    cr_assert_str_eq(my_strncpy(buf, "Hello", 5), "Hello");
+    my_strncpy(buf + 5, " world!", 12);
+    cr_assert_str_eq(buf, "Hello world!");
 }
