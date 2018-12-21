@@ -10,7 +10,7 @@
 | strncpy  | **my_strncpy**  | :heavy_check_mark:  |
 | strcat   | **my_strcat**   | :heavy_check_mark:  |
 | strncat  | **my_strncat**  | :heavy_check_mark:  |
-| memcmp   | **my_memcmp**   | :x:                 |
+| memcmp   | **my_memcmp**   | :heavy_check_mark:  |
 | strcmp   | **my_strcmp**   | :heavy_check_mark:  |
 | strncmp  | **my_strncmp**  | :heavy_check_mark:  |
 | strcoll  | **my_strcoll**  | :x:                 |
@@ -18,7 +18,7 @@
 | memchr   | **my_memchr**   | :x:                 |
 | strchr   | **my_strchr**   | :heavy_check_mark:  |
 | strrchr  | **my_strrchr**  | :heavy_check_mark:  |
-| strspn   | **my_strspn**   | :x:                 |
+| strspn   | **my_strspn**   | :heavy_check_mark:  |
 | strcspn  | **my_strcspn**  | :heavy_check_mark:  |
 | strpbrk  | **strpbrk**     | :heavy_check_mark:  |
 | strstr   | **my_strstr**   | :heavy_check_mark:  |

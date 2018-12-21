@@ -11,6 +11,7 @@
 #include "my_stddef.h"
 
 int my_strcmp(const char *str1, const char *str2);
+int my_memcmp(const void *ptr1, const void *ptr2, my_size_t n);
 int my_strncmp(const char *str1, const char *str2, my_size_t n);
 
 void *my_memcpy(void *dest, const void *src, my_size_t size);
