@@ -10,7 +10,7 @@
 
 Test(unit, my_strncpy)
 {
-    char buf[16];
+    char buf[16] = "";
 
     cr_assert_str_eq(my_strncpy(buf, "Hello", 5), "Hello");
     my_strncpy(buf + 5, " world!", 12);
