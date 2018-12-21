@@ -2,9 +2,17 @@ stages:
   - build
   - tests
 
+.base:
+  only:
+    changes:
+      - src/**/*
+      - tests/**/*
+      - include/**/*
+
 build:
-  image: gcc
   stage: build
+  extends: .base
+  image: gcc
   artifacts:
     paths:
       - lib/libmy.a
@@ -13,6 +21,7 @@ build:
 
 norm:
   stage: tests
+  extends: .base
   image: ethaligan/epitech-c
   allow_failure: yes
   script:
@@ -20,6 +29,7 @@ norm:
 
 test:
   stage: tests
+  extends: .base
   image: ethaligan/epitech-c
   script:
     - make test
