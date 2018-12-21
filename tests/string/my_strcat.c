@@ -5,15 +5,14 @@
 ** my_strcat unit test.
 */
 
-#include "my.h"
+#include "my_string.h"
 #include <criterion/criterion.h>
 
 Test(unit, my_strcat)
 {
-    char empty[1] = "";
-    char hello[12] = "Hello";
+    char buf[16] = "Hello";
 
-    cr_assert_str_eq(my_strcat(empty, ""), "");
-    cr_assert_str_eq(my_strcat(hello, ""), "Hello");
-    cr_assert_str_eq(my_strcat(hello, " world!"), "Hello world!");
+    cr_assert_str_eq(my_strcat(buf, ""), "Hello");
+    cr_assert_str_eq(my_strcat(buf, " "), "Hello ");
+    cr_assert_str_eq(my_strcat(buf, "world!"), "Hello world!");
 }

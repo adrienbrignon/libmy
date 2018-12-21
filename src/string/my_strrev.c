@@ -9,8 +9,8 @@
 
 char *my_strrev(char *str)
 {
-    long i;
-    long j;
+    my_ssize_t i;
+    my_ssize_t j;
     my_size_t len = my_strlen(str);
 
     for (i = 0, j = len - 1; i < j; i++, j--) {

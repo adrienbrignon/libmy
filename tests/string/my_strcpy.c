@@ -5,15 +5,13 @@
 ** my_strcpy unit test.
 */
 
-#include "my.h"
+#include "my_string.h"
 #include <criterion/criterion.h>
 
 Test(unit, my_strcpy)
 {
-    char str[5];
-    char const *readonly = "hello";
+    char buf[16] = "Hi!";
 
-    my_strcpy(str, readonly);
-
-    cr_assert_str_eq(str, "hello");
+    cr_assert_str_eq(my_strcpy(buf, "hello"), "hello");
+    cr_assert_str_eq(my_strcpy(buf, "world!"), "world!");
 }

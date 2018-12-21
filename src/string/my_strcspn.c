@@ -9,7 +9,7 @@
 
 my_size_t my_strcspn(const char *str, const char *mask)
 {
-    unsigned int i;
+    my_size_t i;
 
     for (i = 0; str[i] != '\0'; i++)
         for (my_size_t j = 0; mask[j] != '\0'; j++)

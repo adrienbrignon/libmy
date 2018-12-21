@@ -5,10 +5,8 @@
 ** my_strrchr unit test.
 */
 
-#include "my.h"
-#include "tests.h"
+#include "my_string.h"
 #include <criterion/criterion.h>
-#include <criterion/redirect.h>
 
 Test(unit, my_strrchr)
 {

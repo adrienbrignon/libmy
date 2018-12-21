@@ -5,7 +5,7 @@
 ** my_strupr unit test.
 */
 
-#include "my.h"
+#include "my_string.h"
 #include <criterion/criterion.h>
 
 Test(unit, my_strupr)

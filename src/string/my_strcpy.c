@@ -5,9 +5,11 @@
 ** Copy a string into another.
 */
 
+#include "my_stddef.h"
+
 char *my_strcpy(char *dest, const char *str)
 {
-    int i;
+    my_size_t i;
 
     for (i = 0; str[i] != '\0'; i++)
         dest[i] = str[i];

@@ -5,7 +5,7 @@
 ** my_strlen unit test.
 */
 
-#include "my.h"
+#include "my_string.h"
 #include <criterion/criterion.h>
 
 Test(unit, test_my_strlen)
