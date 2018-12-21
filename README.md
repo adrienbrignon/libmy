@@ -4,7 +4,7 @@
 
 | Base     | Implementation  | Status              |
 |:--------:|:---------------:|:-------------------:|
-| memcpy   | **my_memcpy**   | :x:                 |
+| memcpy   | **my_memcpy**   | :heavy_check_mark:  |
 | memmove  | **my_memmove**  | :x:                 |
 | strcpy   | **my_strcpy**   | :heavy_check_mark:  |
 | strncpy  | **my_strncpy**  | :heavy_check_mark:  |
