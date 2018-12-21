@@ -5,8 +5,7 @@
 ** my_trunc unit test.
 */
 
-#include "my.h"
-#include <float.h>
+#include "my_math.h"
 #include <criterion/criterion.h>
 
 Test(unit, my_trunc)

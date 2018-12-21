@@ -5,7 +5,6 @@
 ** Return the division remainder.
 */
 
-#include "math.h"
 #include "my_math.h"
 
 double my_fmod(double numer, double denom)

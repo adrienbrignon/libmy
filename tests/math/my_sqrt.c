@@ -5,7 +5,7 @@
 ** my_sqrt unit test.
 */
 
-#include "my.h"
+#include "my_math.h"
 #include <criterion/criterion.h>
 
 Test(unit, my_sqrt)

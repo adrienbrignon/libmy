@@ -5,8 +5,10 @@
 ** Our own implementation of the puts function.
 */
 
-#include "my.h"
 #include <unistd.h>
+#include "my_stdio.h"
+#include "my_string.h"
+#include "my_unistd.h"
 
 int my_puts(const char *str)
 {

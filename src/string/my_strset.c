@@ -5,7 +5,7 @@
 ** Set all characters of the string to the given character.
 */
 
-#include "my.h"
+#include "my_stddef.h"
 
 char *my_strset(char *str, char c)
 {

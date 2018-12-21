@@ -5,8 +5,8 @@
 ** my_putchar unit test.
 */
 
-#include "my.h"
 #include "tests.h"
+#include "my_stdio.h"
 #include <criterion/criterion.h>
 #include <criterion/redirect.h>
 
