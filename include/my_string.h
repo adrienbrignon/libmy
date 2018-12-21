@@ -14,6 +14,9 @@ int my_strcmp(const char *str1, const char *str2);
 int my_strcspn(const char *str, const char *mask);
 int my_strncmp(const char *str1, const char *str2, my_size_t n);
 
+void *my_memcpy(void *dest, const void *src, my_size_t size);
+void *my_memmove(void *dest, const void *src, my_size_t size);
+
 char *my_strrev(char *str);
 char *my_strupr(char *str);
 char *my_strlwr(char *str);
