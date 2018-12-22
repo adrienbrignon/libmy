@@ -16,6 +16,9 @@ int my_isblank(char c);
 int my_islower(char c);
 int my_isprint(char c);
 int my_isspace(char c);
+int my_iscntrl(char c);
+int my_isgraph(char c);
+int my_ispunct(char c);
 int my_isxdigit(char c);
 
 char my_tolower(char c);

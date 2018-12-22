@@ -1,5 +1,24 @@
 # Implementations
 
+### <ctype.h>
+| Base     | Implementation  | Status              |
+|:--------:|:---------------:|:-------------------:|
+| isalnum  | **my_isalnum**  | :heavy_check_mark:  |
+| isalpha  | **my_isalpha**  | :heavy_check_mark:  |
+| isblank  | **my_isblank**  | :heavy_check_mark:  |
+| iscntrl  | **my_iscntrl**  | :heavy_check_mark:  |
+| isdigit  | **my_isdigit**  | :heavy_check_mark:  |
+| isgraph  | **my_isgraph**  | :heavy_check_mark:  |
+| islower  | **my_islower**  | :heavy_check_mark:  |
+| isprint  | **my_isprint**  | :heavy_check_mark:  |
+| ispunct  | **my_ispunct**  | :heavy_check_mark:  |
+| isspace  | **my_isspace**  | :heavy_check_mark:  |
+| isupper  | **my_isupper**  | :heavy_check_mark:  |
+| isxdigit | **my_isxdigit** | :heavy_check_mark:  |
+| tolower  | **my_tolower**  | :heavy_check_mark:  |
+| toupper  | **my_toupper**  | :heavy_check_mark:  |
+
+
 ### <string.h>
 
 | Base     | Implementation  | Status              |
