@@ -11,8 +11,7 @@
 char *my_strupr(char *str)
 {
     for (my_size_t i = 0; str[i] != '\0'; i++)
-        if (my_islower(str[i]))
-            str[i] = my_toupper(str[i]);
+        str[i] = my_toupper(str[i]);
 
     return str;
 }

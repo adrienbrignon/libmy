@@ -11,8 +11,7 @@
 char *my_strlwr(char *str)
 {
     for (my_size_t i = 0; str[i] != '\0'; i++)
-        if (my_isupper(str[i]))
-            str[i] = my_tolower(str[i]);
+        str[i] = my_tolower(str[i]);
 
     return str;
 }
