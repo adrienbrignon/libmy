@@ -34,7 +34,7 @@
 | strncmp  | **my_strncmp**  | :heavy_check_mark:  |
 | strcoll  | **my_strcoll**  | :x:                 |
 | strxfrm  | **my_strxfrm**  | :x:                 |
-| memchr   | **my_memchr**   | :x:                 |
+| memchr   | **my_memchr**   | :heavy_check_mark:  |
 | strchr   | **my_strchr**   | :heavy_check_mark:  |
 | strrchr  | **my_strrchr**  | :heavy_check_mark:  |
 | strspn   | **my_strspn**   | :heavy_check_mark:  |
@@ -42,7 +42,7 @@
 | strpbrk  | **strpbrk**     | :heavy_check_mark:  |
 | strstr   | **my_strstr**   | :heavy_check_mark:  |
 | strtok   | **my_strtok**   | :heavy_check_mark:  |
-| memset   | **my_memset**   | :x:                 |
+| memset   | **my_memset**   | :heavy_check_mark:  |
 | strerror | **my_strerror** | :x:                 |
 | strlen   | **my_strlen**   | :heavy_check_mark:  |
 | strdup   | **my_strdup**   | :heavy_check_mark:  |
