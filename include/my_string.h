@@ -29,6 +29,7 @@ char *my_strchr(const char *str, char c);
 char *my_strrchr(const char *str, char c);
 char *my_strcat(char *dest, const char *src);
 char *my_strcpy(char *dest, const char *src);
+char *my_strtok(char *str, const char *delim);
 char *my_strstr(char *haystack, const char *needle);
 char *my_strncat(char *dest, const char *src, my_size_t n);
 char *my_strncpy(char *dest, const char *src, my_size_t n);
