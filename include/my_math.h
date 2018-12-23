@@ -23,5 +23,6 @@ double my_ldexp(double x, int exp);
 double my_fdim(double x, double y);
 double my_copysign(double x, double y);
 double my_fmod(double numer, double denom);
+double my_fma(double x, double y, double z);
 
 #endif

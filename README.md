@@ -59,7 +59,7 @@
 |    fmax    |    **my_fmax**    |  :heavy_check_mark: |
 |    fmin    |    **my_fmin**    |  :heavy_check_mark: |
 |    fabs    |    **my_fabs**    |  :heavy_check_mark: |
-|     fma    |     **my_fma**    |         :x:         |
+|     fma    |     **my_fma**    |  :heavy_check_mark: |
 |            |   **my_isprime**  | :large_blue_circle: |
 
 ### <ctype.h>
