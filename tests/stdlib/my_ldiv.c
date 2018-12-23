@@ -10,8 +10,8 @@
 
 Test(unit, my_ldiv)
 {
-    my_ldiv_t result = my_ldiv(38L, 5L);
+    my_ldiv_t result = my_ldiv(1000000L, 132L);
 
-    cr_assert_eq(result.rem, 3L);
-    cr_assert_eq(result.quot, 7L);
+    cr_assert_eq(result.rem, 100L);
+    cr_assert_eq(result.quot, 7575L);
 }

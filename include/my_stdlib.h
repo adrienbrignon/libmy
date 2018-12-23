@@ -18,6 +18,11 @@ typedef struct my_ldiv {
     long rem;
 } my_ldiv_t;
 
+typedef struct my_lldiv {
+    long long quot;
+    long long rem;
+} my_lldiv_t;
+
 int my_abs(int x);
 int my_atoi(const char *str);
 
@@ -29,6 +34,8 @@ long long my_atoll(char const *str);
 my_div_t my_div(int numer, int denom);
 
 my_ldiv_t my_ldiv(long numer, long denom);
+
+my_lldiv_t my_lldiv(long long numer, long long denom);
 
 #endif
 
