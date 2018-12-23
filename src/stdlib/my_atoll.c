@@ -8,11 +8,11 @@
 #include "my_ctype.h"
 #include "my_stddef.h"
 
-long my_atol(char const *str)
+long long my_atoll(char const *str)
 {
     my_size_t i = 0;
-    long result = 0;
     signed char sign = 1;
+    long long result = 0;
 
     while (my_isspace(str[i]))
         i++;
