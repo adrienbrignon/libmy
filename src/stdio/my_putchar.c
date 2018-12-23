@@ -10,5 +10,5 @@
 
 int my_putchar(char c)
 {
-    return write(MY_STDOUT_FILENO, &c, sizeof c);
+    return write(MY_STDOUT_FILENO, &c, 1);
 }
