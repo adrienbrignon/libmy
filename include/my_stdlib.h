@@ -29,6 +29,7 @@ int my_atoi(const char *str);
 long my_labs(long x);
 long my_atol(const char *str);
 
+long long my_llabs(long long n);
 long long my_atoll(char const *str);
 
 my_div_t my_div(int numer, int denom);
