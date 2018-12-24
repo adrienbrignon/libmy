@@ -10,10 +10,9 @@
 
 char *my_strrchr(const char *str, char c)
 {
-    for (my_ssize_t i = my_strlen(str) - 1; i >= 0; i--) {
+    for (my_ssize_t i = my_strlen(str) - 1; i >= 0; i--)
         if (str[i] == c)
             return (char *) &str[i];
-    }
 
     return MY_NULL;
 }

@@ -7,10 +7,5 @@
 
 double my_pow(double x, double y)
 {
-    if (y == 0)
-        return 1;
-    else if (y < 0)
-        return 0;
-
-    return my_pow(x, y - 1.0) * x;
+    return y == 0 ? 1 : y < 0 ? 0 : my_pow(x, y - 1.0) * x;
 }

@@ -7,10 +7,5 @@
 
 double my_ceil(double x)
 {
-    long rounded = x;
-
-    if (x - rounded > 0)
-        return rounded + 1;
-
-    return rounded;
+    return x - (long) x > 0 ? (long) x + 1 : (long) x;
 }

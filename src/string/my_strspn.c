@@ -11,7 +11,7 @@ my_size_t my_strspn(const char *str, const char *mask)
 {
     my_size_t i = 0;
 
-    while (my_strchr(mask, str[i]))
+    while (my_strchr(mask, str[i]) != MY_NULL)
         i++;
 
     return i;

@@ -10,6 +10,7 @@
 
 Test(unit, my_strrchr)
 {
+    cr_assert_null(my_strrchr("", ' '));
     cr_assert_null(my_strrchr("w", 'W'));
     cr_assert_null(my_strrchr("Meow", 'X'));
     cr_assert_str_eq(my_strrchr("w", 'w'), "w");

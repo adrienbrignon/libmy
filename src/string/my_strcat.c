@@ -5,19 +5,16 @@
 ** Concatenate two strings together.
 */
 
-#include "my_stddef.h"
+#include "my_string.h"
 
 char *my_strcat(char *dest, const char *src)
 {
-    my_size_t j;
-    my_size_t i = 0;
+    char *ptr = dest + my_strlen(dest);
 
-    while (dest[i] != '\0')
-        i++;
-    for (j = 0; src[j] != '\0'; j++)
-        dest[i + j] = src[j];
+    while (*src != '\0')
+        *ptr++ = *src++;
 
-    dest[i + j] = '\0';
+    *ptr = '\0';
 
     return dest;
 }

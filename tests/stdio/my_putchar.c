@@ -5,12 +5,16 @@
 ** my_putchar unit test.
 */
 
-#include "tests.h"
 #include "my_stdio.h"
 #include <criterion/criterion.h>
 #include <criterion/redirect.h>
 
-Test(unit, my_putchar, .init = redirect_all_std)
+static void redirect_std(void)
+{
+    cr_redirect_stdout();
+}
+
+Test(unit, my_putchar, .init = redirect_std)
 {
     int printed = my_putchar('@');
 

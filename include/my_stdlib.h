@@ -38,9 +38,7 @@ char *my_lltoa(long long n, char *buf, int base);
 char *my_ultoa(unsigned long n, char *buf, int base);
 
 my_div_t my_div(int numer, int denom);
-
 my_ldiv_t my_ldiv(long numer, long denom);
-
 my_lldiv_t my_lldiv(long long numer, long long denom);
 
 #endif

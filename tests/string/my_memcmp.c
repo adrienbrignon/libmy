@@ -15,6 +15,7 @@ Test(unit, my_memcmp)
 
     cr_assert_eq(my_memcmp(&x, &y, 0), 0);
     cr_assert_lt(my_memcmp(&x, &y, 1), 0);
+    cr_assert_lt(my_memcmp(&x, &y, 1), 0);
     cr_assert_eq(my_memcmp("x", "x", 1), 0);
     cr_assert_gt(my_memcmp("x", "X", 1), 0);
 }

@@ -9,12 +9,12 @@
 
 char *my_strncat(char *dest, const char *src, my_size_t n)
 {
-    char *end = dest + my_strlen(dest);
+    char *ptr = dest + my_strlen(dest);
 
     while (*src != '\0' && n-- > 0)
-        *end++ = *src++;
+        *ptr++ = *src++;
 
-    *end = '\0';
+    *ptr = '\0';
 
     return dest;
 }
