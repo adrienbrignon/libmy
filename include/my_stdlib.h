@@ -32,6 +32,11 @@ long my_atol(const char *str);
 long long my_llabs(long long n);
 long long my_atoll(char const *str);
 
+char *my_itoa(int n, char *buf, int base);
+char *my_ltoa(long n, char *buf, int base);
+char *my_lltoa(long long n, char *buf, int base);
+char *my_ultoa(unsigned long n, char *buf, int base);
+
 my_div_t my_div(int numer, int denom);
 
 my_ldiv_t my_ldiv(long numer, long denom);
