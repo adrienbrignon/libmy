@@ -7,8 +7,8 @@ build:
   image: gcc
   artifacts:
     paths:
-      - lib/libmy.a
-      - include/my.h
+      - lib
+      - include
   script: make
 
 norm:
