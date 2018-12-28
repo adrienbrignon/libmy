@@ -1,5 +1,72 @@
 # Implementations
 
+### <stdlib.h>
+|      Base     |    Implementation    |        Status       |
+|:-------------:|:--------------------:|:-------------------:|
+|      atof     |      **my_atof**     |         :x:         |
+|      atoi     |      **my_atoi**     |  :heavy_check_mark: |
+|      atol     |      **my_atol**     |  :heavy_check_mark: |
+|     atoll     |     **my_atoll**     |  :heavy_check_mark: |
+|     strtod    |     **my_strtod**    |         :x:         |
+|     strtof    |     **my_strtof**    |         :x:         |
+|     strtol    |     **my_strtol**    |         :x:         |
+|    strtold    |    **my_strtold**    |         :x:         |
+|    strtoll    |    **my_strtoll**    |         :x:         |
+|    strtoul    |    **my_strtoul**    |         :x:         |
+|    strtoull   |    **my_strtoull**   |         :x:         |
+|      rand     |      **my_rand**     |         :x:         |
+|     srand     |     **my_srand**     |         :x:         |
+|     calloc    |     **my_calloc**    |         :x:         |
+|      free     |      **my_free**     |         :x:         |
+|     malloc    |     **my_malloc**    |         :x:         |
+|    realloc    |    **my_realloc**    |         :x:         |
+|     abort     |     **my_abort**     |         :x:         |
+|     atexit    |     **my_atexit**    |         :x:         |
+| at_quick_exit | **my_at_quick_exit** |         :x:         |
+|      exit     |      **my_exit**     |         :x:         |
+|     getenv    |     **my_getenv**    |         :x:         |
+|   quick_exit  |   **my_quick_exit**  |         :x:         |
+|     system    |     **my_system**    |         :x:         |
+|    bsearch    |    **my_bsearch**    |         :x:         |
+|     qsort     |     **my_qsort**     |         :x:         |
+|      abs      |      **my_abs**      |  :heavy_check_mark: |
+|      div      |      **my_div**      |  :heavy_check_mark: |
+|      labs     |      **my_labs**     |  :heavy_check_mark: |
+|      ldiv     |      **my_ldiv**     |  :heavy_check_mark: |
+|     llabs     |     **my_llabs**     |  :heavy_check_mark: |
+|     lldiv     |     **my_lldiv**     |  :heavy_check_mark: |
+|     mblen     |     **my_mblen**     |         :x:         |
+|     mbtowc    |     **my_mbtowc**    |         :x:         |
+|     wctomb    |     **my_wctomb**    |         :x:         |
+|    mbstowcs   |    **my_mbstowcs**   |         :x:         |
+|    wcstombs   |    **my_wcstombs**   |         :x:         |
+|               |      **my_itoa**     | :large_blue_circle: |
+|               |      **my_ltoa**     | :large_blue_circle: |
+|               |     **my_lltoa**     | :large_blue_circle: |
+|               |     **my_ultoa**     | :large_blue_circle: |
+
+### <stdbool.h>
+|  Base | Implementation |       Status       |
+|:-----:|:--------------:|:------------------:|
+|  bool |   **my_bool**  | :heavy_check_mark: |
+| false |  **my_false**  | :heavy_check_mark: |
+|  true |   **my_true**  | :heavy_check_mark: |
+
+### <iso646.h>
+|  Base  | Implementation |       Status       |
+|:------:|:--------------:|:------------------:|
+|   and  |   **my_and**   | :heavy_check_mark: |
+| and_eq |   **and_eq**   | :heavy_check_mark: |
+| bitand |  **my_bitand** | :heavy_check_mark: |
+|  bitor |  **my_bitor**  | :heavy_check_mark: |
+|  compl |  **my_compl**  | :heavy_check_mark: |
+|   not  |   **my_not**   | :heavy_check_mark: |
+| not_eq |  **my_not_eq** | :heavy_check_mark: |
+|   or   |    **my_or**   | :heavy_check_mark: |
+|  or_eq |  **my_or_eq**  | :heavy_check_mark: |
+|   xor  |   **my_xor**   | :heavy_check_mark: |
+| xor_eq |  **my_xor_eq** | :heavy_check_mark: |
+
 ### <math.h>
 |    Base    |   Implementation  |        Status       |
 |:----------:|:-----------------:|:-------------------:|
@@ -55,7 +122,7 @@
 |     nan    |     **my_nan**    |         :x:         |
 |  nextafter |  **my_nextafter** |         :x:         |
 | nexttoward | **my_nexttoward** |         :x:         |
-|    fdim    |    **my_fdim**    |         :x:         |
+|    fdim    |    **my_fdim**    |  :heavy_check_mark: |
 |    fmax    |    **my_fmax**    |  :heavy_check_mark: |
 |    fmin    |    **my_fmin**    |  :heavy_check_mark: |
 |    fabs    |    **my_fabs**    |  :heavy_check_mark: |
