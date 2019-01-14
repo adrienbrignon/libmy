@@ -11,4 +11,3 @@ double my_copysign(double x, double y)
 {
     return y < 0 ? -my_fabs(x) : my_fabs(x);
 }
-

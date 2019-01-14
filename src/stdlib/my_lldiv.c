@@ -11,4 +11,3 @@ my_lldiv_t my_lldiv(long long numer, long long denom)
 {
     return (my_lldiv_t) {numer / denom, numer % denom};
 }
-

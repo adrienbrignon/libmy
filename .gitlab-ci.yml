@@ -25,5 +25,3 @@ test:
     - make test
     - gcovr -s
   coverage: '/lines: \d+\.\d+/'
-
-

@@ -9,4 +9,3 @@ int my_isblank(char c)
 {
     return c == ' ' || c == '\t';
 }
-

@@ -42,4 +42,3 @@ my_ldiv_t my_ldiv(long numer, long denom);
 my_lldiv_t my_lldiv(long long numer, long long denom);
 
 #endif
-

@@ -21,4 +21,3 @@
 #define my_xor_eq (^=)
 
 #endif
-
