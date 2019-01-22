@@ -39,6 +39,7 @@ char *my_ltoa(long n, char *buf, int base);
 char *my_lltoa(long long n, char *buf, int base);
 char *my_ultoa(unsigned long n, char *buf, int base);
 
+void *my_calloc(my_size_t n, my_size_t size);
 void *my_realloc(void *src, my_size_t old_size, my_size_t size);
 
 my_div_t my_div(int numer, int denom);
