@@ -5,10 +5,10 @@
 ** my_ultoa unit test.
 */
 
-#include "my.h"
+#include "my_stdlib.h"
 #include <criterion/criterion.h>
 
-Test(unit, my_ultoa)
+Test(stdlib, my_ultoa)
 {
     char buf[12];
 

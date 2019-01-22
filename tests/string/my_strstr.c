@@ -8,7 +8,7 @@
 #include "my_string.h"
 #include <criterion/criterion.h>
 
-Test(unit, my_strstr)
+Test(string, my_strstr)
 {
     char lorem[] = "Lorem ipsum dolor sit amet.";
 

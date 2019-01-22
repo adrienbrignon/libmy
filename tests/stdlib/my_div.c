@@ -8,7 +8,7 @@
 #include "my_stdlib.h"
 #include <criterion/criterion.h>
 
-Test(unit, my_div)
+Test(stdlib, my_div)
 {
     my_div_t result = my_div(38, 5);
 

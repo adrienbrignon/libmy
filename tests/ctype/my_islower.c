@@ -8,7 +8,7 @@
 #include "my_ctype.h"
 #include <criterion/criterion.h>
 
-Test(unit, my_islower)
+Test(ctype, my_islower)
 {
     cr_assert_eq(my_islower('A'), 0);
     cr_assert_eq(my_islower('a'), 1);

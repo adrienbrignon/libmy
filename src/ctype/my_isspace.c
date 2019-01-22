@@ -7,15 +7,10 @@
 
 int my_isspace(char c)
 {
-    switch (c) {
-        case ' ':
-        case '\t':
-        case '\n':
-        case '\v':
-        case '\f':
-        case '\r':
-            return 1;
-    }
-
-    return 0;
+    return c == ' '
+        || c == '\t'
+        || c == '\n'
+        || c == '\v'
+        || c == '\f'
+        || c == '\r';
 }

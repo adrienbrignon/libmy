@@ -8,7 +8,7 @@
 #include "my_string.h"
 #include <criterion/criterion.h>
 
-Test(unit, test_my_strlen)
+Test(string, test_my_strlen)
 {
     cr_assert_eq(my_strlen(""), 0);
     cr_assert_eq(my_strlen("a"), 1);

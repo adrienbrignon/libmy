@@ -8,7 +8,7 @@
 #include "my_string.h"
 #include <criterion/criterion.h>
 
-Test(unit, my_strtok)
+Test(string, my_strtok)
 {
     char empty[] = "";
     char str[] = "Hello, how are you? Fine!";

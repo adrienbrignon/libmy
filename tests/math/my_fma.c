@@ -8,7 +8,7 @@
 #include "my_math.h"
 #include <criterion/criterion.h>
 
-Test(unit, my_fma)
+Test(math, my_fma)
 {
     cr_assert_geq(my_fma(0, 0, 0), 0);
     cr_assert_geq(my_fma(0, 2, 1), 1);

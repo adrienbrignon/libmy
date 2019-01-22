@@ -5,6 +5,8 @@
 ** Standard library definitions.
 */
 
+#include "my_stddef.h"
+
 #ifndef MY_STDLIB_H_
 #define MY_STDLIB_H_
 
@@ -36,6 +38,8 @@ char *my_itoa(int n, char *buf, int base);
 char *my_ltoa(long n, char *buf, int base);
 char *my_lltoa(long long n, char *buf, int base);
 char *my_ultoa(unsigned long n, char *buf, int base);
+
+void *my_realloc(void *src, my_size_t old_size, my_size_t size);
 
 my_div_t my_div(int numer, int denom);
 my_ldiv_t my_ldiv(long numer, long denom);

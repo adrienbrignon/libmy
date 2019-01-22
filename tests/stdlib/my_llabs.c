@@ -8,7 +8,7 @@
 #include "my_stdlib.h"
 #include <criterion/criterion.h>
 
-Test(unit, my_llabs)
+Test(stdlib, my_llabs)
 {
     cr_assert_eq(my_llabs(0), 0);
     cr_assert_eq(my_llabs(31558149LL), 31558149LL);

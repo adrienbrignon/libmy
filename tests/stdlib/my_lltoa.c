@@ -5,10 +5,10 @@
 ** my_lltoa unit test.
 */
 
-#include "my.h"
+#include "my_stdlib.h"
 #include <criterion/criterion.h>
 
-Test(unit, my_lltoa)
+Test(stdlib, my_lltoa)
 {
     char buf[12];
 

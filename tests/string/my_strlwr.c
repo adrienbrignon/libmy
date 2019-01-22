@@ -8,7 +8,7 @@
 #include "my_string.h"
 #include <criterion/criterion.h>
 
-Test(unit, my_strlwr)
+Test(string, my_strlwr)
 {
     char str[] = "Hello WORLD!";
 

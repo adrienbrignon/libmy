@@ -8,7 +8,7 @@
 #include "my_string.h"
 #include <criterion/criterion.h>
 
-Test(unit, my_strrev)
+Test(string, my_strrev)
 {
     char empty[1] = "";
     char radar[6] = "radar";

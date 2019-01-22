@@ -8,7 +8,7 @@
 #include "my_math.h"
 #include <criterion/criterion.h>
 
-Test(unit, my_trunc)
+Test(math, my_trunc)
 {
     cr_assert_eq(my_trunc(0), 0);
     cr_assert_eq(my_trunc(1), 1);

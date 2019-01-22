@@ -8,7 +8,7 @@
 #include "my_string.h"
 #include <criterion/criterion.h>
 
-Test(unit, my_memmove)
+Test(string, my_memmove)
 {
     char x[] = "hello world!";
     char y[] = "hell, ";

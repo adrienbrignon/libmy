@@ -8,7 +8,7 @@
 #include "my_math.h"
 #include <criterion/criterion.h>
 
-Test(unit, my_fmax)
+Test(math, my_fmax)
 {
     cr_assert_eq(my_fmax(0, 0), 0);
     cr_assert_eq(my_fmax(0, 1), 1);

@@ -8,7 +8,7 @@
 #include "my_math.h"
 #include <criterion/criterion.h>
 
-Test(unit, my_copysign)
+Test(math, my_copysign)
 {
     cr_assert_eq(my_copysign(0, 0), 0);
     cr_assert_eq(my_copysign(0, 1), 0);

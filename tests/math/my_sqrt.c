@@ -8,7 +8,7 @@
 #include "my_math.h"
 #include <criterion/criterion.h>
 
-Test(unit, my_sqrt)
+Test(math, my_sqrt)
 {
     cr_assert_eq(my_sqrt(0), 0);
     cr_assert_eq(my_sqrt(2), 0);

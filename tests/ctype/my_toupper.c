@@ -8,7 +8,7 @@
 #include "my_ctype.h"
 #include <criterion/criterion.h>
 
-Test(unit, my_toupper)
+Test(ctype, my_toupper)
 {
     cr_assert_eq(my_toupper('A'), 'A');
     cr_assert_eq(my_toupper('a'), 'A');

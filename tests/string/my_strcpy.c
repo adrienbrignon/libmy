@@ -8,7 +8,7 @@
 #include "my_string.h"
 #include <criterion/criterion.h>
 
-Test(unit, my_strcpy)
+Test(string, my_strcpy)
 {
     char buf[16] = "Hi!";
 

@@ -14,7 +14,7 @@ static void redirect_std(void)
     cr_redirect_stdout();
 }
 
-Test(unit, my_puts, .init = redirect_std)
+Test(stdio, my_puts, .init = redirect_std)
 {
     int printed = my_puts("Hello world!");
 

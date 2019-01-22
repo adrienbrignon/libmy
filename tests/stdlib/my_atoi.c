@@ -8,7 +8,7 @@
 #include "my_stdlib.h"
 #include <criterion/criterion.h>
 
-Test(unit, my_atoi)
+Test(stdlib, my_atoi)
 {
     cr_assert_eq(my_atoi(""), 0);
     cr_assert_eq(my_atoi("0"), 0);

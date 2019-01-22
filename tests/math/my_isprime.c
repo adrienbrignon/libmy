@@ -8,7 +8,7 @@
 #include "my_math.h"
 #include <criterion/criterion.h>
 
-Test(unit, my_isprime)
+Test(math, my_isprime)
 {
     cr_assert_eq(my_isprime(0), 0);
     cr_assert_eq(my_isprime(2), 1);

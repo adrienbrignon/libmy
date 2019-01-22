@@ -8,7 +8,7 @@
 #include "my_string.h"
 #include <criterion/criterion.h>
 
-Test(unit, my_strset)
+Test(string, my_strset)
 {
     char str[] = "I like trains.";
 

@@ -8,7 +8,7 @@
 #include "my_stdlib.h"
 #include <criterion/criterion.h>
 
-Test(unit, my_ldiv)
+Test(stdlib, my_ldiv)
 {
     my_ldiv_t result = my_ldiv(1000000L, 132L);
 

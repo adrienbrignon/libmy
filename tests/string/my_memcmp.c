@@ -8,7 +8,7 @@
 #include "my_string.h"
 #include <criterion/criterion.h>
 
-Test(unit, my_memcmp)
+Test(string, my_memcmp)
 {
     int x = 0;
     int y = 3;

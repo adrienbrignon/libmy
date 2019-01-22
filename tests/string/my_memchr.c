@@ -8,7 +8,7 @@
 #include "my_string.h"
 #include <criterion/criterion.h>
 
-Test(unit, my_memchr)
+Test(string, my_memchr)
 {
     cr_assert_null(my_memchr("w", 'W', 1));
     cr_assert_null(my_memchr("Meow", 'X', 4));

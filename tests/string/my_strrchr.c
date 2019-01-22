@@ -8,7 +8,7 @@
 #include "my_string.h"
 #include <criterion/criterion.h>
 
-Test(unit, my_strrchr)
+Test(string, my_strrchr)
 {
     cr_assert_null(my_strrchr("", ' '));
     cr_assert_null(my_strrchr("w", 'W'));

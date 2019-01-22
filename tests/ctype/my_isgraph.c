@@ -8,7 +8,7 @@
 #include "my_ctype.h"
 #include <criterion/criterion.h>
 
-Test(unit, my_isgraph)
+Test(ctype, my_isgraph)
 {
     cr_assert_eq(my_isgraph(' '), 0);
     cr_assert_eq(my_isgraph('~'), 1);

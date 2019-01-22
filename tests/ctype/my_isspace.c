@@ -8,7 +8,7 @@
 #include "my_ctype.h"
 #include <criterion/criterion.h>
 
-Test(unit, my_isspace)
+Test(ctype, my_isspace)
 {
     cr_assert_eq(my_isspace('X'), 0);
     cr_assert_eq(my_isspace(' '), 1);

@@ -8,7 +8,7 @@
 #include "my_ctype.h"
 #include <criterion/criterion.h>
 
-Test(unit, my_isalnum)
+Test(ctype, my_isalnum)
 {
     cr_assert_eq(my_isalnum(' '), 0);
     cr_assert_eq(my_isalnum('@'), 0);

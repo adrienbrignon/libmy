@@ -8,7 +8,7 @@
 #include "my_ctype.h"
 #include <criterion/criterion.h>
 
-Test(unit, my_isalpha)
+Test(ctype, my_isalpha)
 {
     cr_assert_eq(my_isalpha('a'), 1);
     cr_assert_eq(my_isalpha('Z'), 1);

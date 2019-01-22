@@ -8,7 +8,7 @@
 #include "my_stdlib.h"
 #include <criterion/criterion.h>
 
-Test(unit, my_lldiv)
+Test(stdlib, my_lldiv)
 {
     my_lldiv_t result = my_lldiv(31558149LL, 3600LL);
 

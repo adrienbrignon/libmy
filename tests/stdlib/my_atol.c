@@ -8,7 +8,7 @@
 #include "my_stdlib.h"
 #include <criterion/criterion.h>
 
-Test(unit, my_atol)
+Test(stdlib, my_atol)
 {
     cr_assert_eq(my_atol(""), 0L);
     cr_assert_eq(my_atol("0"), 0L);

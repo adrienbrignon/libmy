@@ -8,7 +8,7 @@
 #include "my_ctype.h"
 #include <criterion/criterion.h>
 
-Test(unit, my_isxdigit)
+Test(ctype, my_isxdigit)
 {
     cr_assert_eq(my_isxdigit('0'), 1);
     cr_assert_eq(my_isxdigit('1'), 1);

@@ -8,7 +8,7 @@
 #include "my_string.h"
 #include <criterion/criterion.h>
 
-Test(unit, my_strncmp)
+Test(string, my_strncmp)
 {
     cr_assert_eq(my_strncmp("", "", 0), 0);
     cr_assert_neq(my_strncmp("A", "a", 1), 0);

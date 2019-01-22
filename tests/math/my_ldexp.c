@@ -8,7 +8,7 @@
 #include "my_math.h"
 #include <criterion/criterion.h>
 
-Test(unit, my_ldexp)
+Test(math, my_ldexp)
 {
     cr_assert_float_eq(my_ldexp(0, 0), 0 * my_pow(2, 0), 1e-9);
     cr_assert_float_eq(my_ldexp(1, 1), 1 * my_pow(2, 1), 1e-9);
