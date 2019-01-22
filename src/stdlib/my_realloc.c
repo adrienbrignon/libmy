@@ -6,6 +6,7 @@
 */
 
 #include <stdlib.h>
+
 #include "my_math.h"
 #include "my_string.h"
 

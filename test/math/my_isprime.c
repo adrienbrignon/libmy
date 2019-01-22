@@ -5,8 +5,9 @@
 ** my_isprime unit test.
 */
 
-#include "my_math.h"
 #include <criterion/criterion.h>
+
+#include "my_math.h"
 
 Test(math, my_isprime)
 {

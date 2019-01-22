@@ -5,9 +5,10 @@
 ** my_realloc unit test.
 */
 
+#include <criterion/criterion.h>
+
 #include "my_stdlib.h"
 #include "my_string.h"
-#include <criterion/criterion.h>
 
 Test(stdlib, my_realloc)
 {

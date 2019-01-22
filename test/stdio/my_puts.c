@@ -5,9 +5,10 @@
 ** my_puts unit test.
 */
 
-#include "my_stdio.h"
 #include <criterion/criterion.h>
 #include <criterion/redirect.h>
+
+#include "my_stdio.h"
 
 static void redirect_std(void)
 {

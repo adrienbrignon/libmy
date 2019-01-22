@@ -5,8 +5,9 @@
 ** my_div unit test.
 */
 
-#include "my_stdlib.h"
 #include <criterion/criterion.h>
+
+#include "my_stdlib.h"
 
 Test(stdlib, my_div)
 {

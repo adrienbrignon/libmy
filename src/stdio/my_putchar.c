@@ -6,6 +6,7 @@
 */
 
 #include <unistd.h>
+
 #include "my_unistd.h"
 
 int my_putchar(char c)

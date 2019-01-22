@@ -5,8 +5,9 @@
 ** my_strlwr unit test.
 */
 
-#include "my_string.h"
 #include <criterion/criterion.h>
+
+#include "my_string.h"
 
 Test(string, my_strlwr)
 {

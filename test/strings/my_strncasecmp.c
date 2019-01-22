@@ -5,8 +5,9 @@
 ** my_strncmp unit test.
 */
 
-#include "my_strings.h"
 #include <criterion/criterion.h>
+
+#include "my_strings.h"
 
 Test(strings, my_strncasecmp)
 {

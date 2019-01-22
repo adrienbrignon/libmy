@@ -5,8 +5,9 @@
 ** my_isblank unit test.
 */
 
-#include "my_ctype.h"
 #include <criterion/criterion.h>
+
+#include "my_ctype.h"
 
 Test(ctype, my_isblank)
 {
