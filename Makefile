@@ -6,7 +6,7 @@
 ##
 
 CC = gcc
-CFLAGS = -Wall -Wextra -pedantic -Iinclude -Llib -pipe
+CFLAGS = -Wall -Wextra -pedantic -Iinclude -Llib -O2 -pipe
 LDFLAGS = -lmy
 
 NAME = lib/libmy.a
