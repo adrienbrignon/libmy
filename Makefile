@@ -16,7 +16,7 @@ TEST_NAME = unit-tests
 SRCS = $(wildcard src/*.c) $(wildcard src/**/*.c)
 OBJS = $(SRCS:.c=.o)
 
-TEST_SRCS = $(wildcard tests/*.c) $(wildcard tests/**/*.c)
+TEST_SRCS = $(wildcard test/*.c) $(wildcard test/**/*.c)
 TEST_OBJS = $(TEST_SRCS:.c=.o)
 
 all: $(NAME)
@@ -28,7 +28,7 @@ $(NAME): $(OBJS)
 
 clean:
 	$(RM) src/*.o src/*.gc* src/**/*.o src/**/*.gc*
-	$(RM) tests/*.o tests/**/*.o
+	$(RM) test/*.o test/*.gc* test/**/*.o test/**/*.gc*
 
 fclean: clean
 	$(RM) $(NAME)
