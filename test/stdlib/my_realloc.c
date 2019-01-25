@@ -16,5 +16,5 @@ Test(stdlib, my_realloc)
 
     cr_assert_null(my_realloc(MY_NULL, 0, 0));
     cr_assert_not_null(my_realloc(MY_NULL, 0, 3));
-    cr_assert_not_null(my_realloc(buf, strlen(buf), 32));
+    cr_assert_not_null(my_realloc(buf, my_strlen(buf), 32));
 }
