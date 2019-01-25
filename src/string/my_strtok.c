@@ -19,13 +19,10 @@ char *my_strtok(char *str, const char *delim)
     str = ptr + my_strspn(ptr, delim);
     ptr = str + my_strcspn(str, delim);
 
-    if (ptr == str) {
-        ptr = MY_NULL;
-
-        return ptr;
-    } else if (*ptr != '\0') {
+    if (ptr == str)
+        return ptr = MY_NULL;
+    else if (*ptr != '\0')
         *ptr++ = '\0';
-    }
 
     return str;
 }

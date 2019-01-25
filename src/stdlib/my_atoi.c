@@ -8,7 +8,7 @@
 #include "my_ctype.h"
 #include "my_stddef.h"
 
-int my_atoi(char const *str)
+int my_atoi(const char *str)
 {
     int result = 0;
     my_size_t i = 0;

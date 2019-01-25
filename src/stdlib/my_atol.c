@@ -8,7 +8,7 @@
 #include "my_ctype.h"
 #include "my_stddef.h"
 
-long my_atol(char const *str)
+long my_atol(const char *str)
 {
     my_size_t i = 0;
     long result = 0;

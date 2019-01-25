@@ -25,6 +25,8 @@ typedef struct my_lldiv {
     long long rem;
 } my_lldiv_t;
 
+void my_free(void *ptr);
+
 int my_abs(int x);
 int my_atoi(const char *str);
 
@@ -32,13 +34,14 @@ long my_labs(long x);
 long my_atol(const char *str);
 
 long long my_llabs(long long n);
-long long my_atoll(char const *str);
+long long my_atoll(const char *str);
 
 char *my_itoa(int n, char *buf, int base);
 char *my_ltoa(long n, char *buf, int base);
 char *my_lltoa(long long n, char *buf, int base);
 char *my_ultoa(unsigned long n, char *buf, int base);
 
+void *my_malloc(my_size_t size);
 void *my_calloc(my_size_t n, my_size_t size);
 void *my_realloc(void *src, my_size_t old_size, my_size_t size);
 

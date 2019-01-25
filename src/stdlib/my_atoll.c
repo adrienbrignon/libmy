@@ -8,7 +8,7 @@
 #include "my_ctype.h"
 #include "my_stddef.h"
 
-long long my_atoll(char const *str)
+long long my_atoll(const char *str)
 {
     my_size_t i = 0;
     signed char sign = 1;
