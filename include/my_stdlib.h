@@ -36,6 +36,7 @@ long my_atol(const char *str);
 long long my_llabs(long long n);
 long long my_atoll(const char *str);
 
+char *my_getenv(const char *name);
 char *my_itoa(int n, char *buf, int base);
 char *my_ltoa(long n, char *buf, int base);
 char *my_lltoa(long long n, char *buf, int base);
