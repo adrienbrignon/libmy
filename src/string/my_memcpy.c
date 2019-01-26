@@ -10,7 +10,7 @@
 void *my_memcpy(void *dest, const void *src, my_size_t size)
 {
     char *d = dest;
-    const char *s = src;
+    char *s = (char *) src;
 
     while (size-- > 0)
         *d++ = *s++;

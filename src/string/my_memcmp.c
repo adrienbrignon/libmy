@@ -9,8 +9,8 @@
 
 int my_memcmp(const void *ptr1, const void *ptr2, my_size_t n)
 {
-    const char *p1 = (char *) ptr1;
-    const char *p2 = (char *) ptr2;
+    char *p1 = (char *) ptr1;
+    char *p2 = (char *) ptr2;
 
     while (n-- > 0) {
         if (*p1 != *p2)

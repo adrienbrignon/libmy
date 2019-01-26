@@ -11,7 +11,7 @@ char *my_strchr(const char *str, char c)
 {
     for (my_size_t i = 0; str[i] != '\0'; i++)
         if (str[i] == c)
-            return (char *) &str[i];
+            return (char *) str + i;
 
     return MY_NULL;
 }
