@@ -8,8 +8,9 @@
 #include <unistd.h>
 
 #include "my_stddef.h"
+#include <sys/syscall.h>
 
 my_ssize_t my_write(int fd, const void *buf, my_size_t n)
 {
-    return write(fd, buf, n);
+    return syscall(SYS_write, fd, buf, n);
 }
