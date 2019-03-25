@@ -16,5 +16,3 @@ Test(string, my_strcspn)
     cr_assert_eq(my_strcspn(sample, "yoer,"), 8);
     cr_assert_eq(my_strcspn(sample, "zxp+-"), 26);
 }
-
-

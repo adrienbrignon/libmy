@@ -15,4 +15,3 @@ Test(string, my_strpbrk)
     cr_assert_null(my_strpbrk("Hello world!", "xvhg"));
     cr_assert_str_eq(my_strpbrk("Hello world!", "world!"), "llo world!");
 }
-

@@ -18,5 +18,3 @@ Test(string, my_strspn)
     cr_assert_eq(my_strspn(sample, "zxp+-"), 0);
     cr_assert_eq(my_strspn(sample, "A2t:, "), 11);
 }
-
-
