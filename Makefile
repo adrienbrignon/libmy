@@ -6,22 +6,20 @@
 ##
 
 CC = gcc
-CFLAGS = -Wall -Wextra -pedantic -Iinclude -Llib -O2 -pipe
-LDFLAGS = -lmy
+CFLAGS = -Wall -Werror -Wextra -pedantic -Iinclude -O2 -pipe
+LDFLAGS = -L.
+LDLIBS = -lmy
 
-NAME = lib/libmy.a
-
+NAME = libmy.a
 TEST_NAME = unit-tests
 
 SRCS = $(wildcard src/*.c) $(wildcard src/**/*.c)
 OBJS = $(SRCS:.c=.o)
-
 TEST_SRCS = $(wildcard test/*.c) $(wildcard test/**/*.c)
 TEST_OBJS = $(TEST_SRCS:.c=.o)
 
 all: $(NAME)
 
-$(NAME): CFLAGS += -O2
 $(NAME): CFLAGS += $(TEST_FLAGS)
 $(NAME): $(OBJS)
 	$(AR) rcs $(NAME) $(OBJS)
@@ -35,9 +33,9 @@ fclean: clean
 	$(RM) $(TEST_NAME)
 
 $(TEST_NAME): TEST_FLAGS += -coverage
-$(TEST_NAME): LDFLAGS += -lcriterion -lgcov
+$(TEST_NAME): LDLIBS += -lcriterion -lgcov
 $(TEST_NAME): $(NAME) $(TEST_OBJS)
-	$(CC) $(CFLAGS) -o $@ $(TEST_OBJS) $(LDFLAGS)
+	$(CC) $(CFLAGS) -o $@ $(TEST_OBJS) $(LDFLAGS) $(LDLIBS)
 
 test: $(TEST_NAME)
 	./$^

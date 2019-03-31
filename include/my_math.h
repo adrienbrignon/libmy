@@ -8,11 +8,11 @@
 #ifndef MY_MATH_H_
 #define MY_MATH_H_
 
-int my_sqrt(int x);
 int my_isprime(int x);
 int my_fmin(int x, int y);
 int my_fmax(int x, int y);
 
+double my_sqrt(double x);
 double my_fabs(double n);
 double my_ceil(double x);
 double my_floor(double x);

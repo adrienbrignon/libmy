@@ -5,11 +5,15 @@
 ** Get the square root of the specified number.
 */
 
-int my_sqrt(int nb)
-{
-    for (int n = 0; n <= nb; n++)
-        if (n * n == nb)
-            return n;
+#include "my_math.h"
 
-    return 0;
+double my_sqrt(double nb)
+{
+    double estimate = nb;
+    double epsilon = 1e-9;
+
+    while (my_fabs(nb - estimate / nb) > epsilon * nb)
+        nb = (estimate / nb + nb) / 2;
+
+    return nb;
 }
