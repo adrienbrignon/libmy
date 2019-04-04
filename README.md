@@ -46,11 +46,11 @@
 |               |     **my_ultoa**     | :large_blue_circle: |
 
 ### <stdbool.h>
-|  Base | Implementation |       Status       |
-|:-----:|:--------------:|:------------------:|
-|  bool |   **my_bool**  | :heavy_check_mark: |
-| false |  **my_false**  | :heavy_check_mark: |
-|  true |   **my_true**  | :heavy_check_mark: |
+|  Base |   Implementation  |       Status       |
+|:-----:|:-----------------:|:------------------:|
+|  bool |   **my_bool_t**   | :heavy_check_mark: |
+| false |   **my_false**    | :heavy_check_mark: |
+|  true |    **my_true**    | :heavy_check_mark: |
 
 ### <iso646.h>
 |  Base  | Implementation |       Status       |

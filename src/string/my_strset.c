@@ -7,7 +7,7 @@
 
 #include "my_stddef.h"
 
-char *my_strset(char *str, char c)
+char *my_strset(char *str, int c)
 {
     for (my_size_t i = 0; str[i] != '\0'; i++)
         str[i] = c;

@@ -42,4 +42,4 @@ test: $(TEST_NAME)
 
 re: fclean all
 
-.PHONY: clean fclean re test
+.PHONY: all clean fclean re test

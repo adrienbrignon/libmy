@@ -21,7 +21,7 @@ void *my_realloc(void *src, my_size_t old_size, my_size_t size)
     if (ptr == MY_NULL || src == MY_NULL)
         return ptr;
 
-    my_memmove(ptr, src, old_size);
+    my_memmove(ptr, src, size < old_size ? size : old_size);
     my_free(src);
 
     return ptr;

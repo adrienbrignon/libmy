@@ -13,6 +13,6 @@
 typedef enum {
     my_false = 0,
     my_true = !my_false
-} my_bool;
+} my_bool_t;
 
 #endif

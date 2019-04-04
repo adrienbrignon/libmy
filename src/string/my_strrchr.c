@@ -9,7 +9,7 @@
 
 #include "my_string.h"
 
-char *my_strrchr(const char *str, char c)
+char *my_strrchr(const char *str, int c)
 {
     for (my_ssize_t i = my_strlen(str) - 1; i >= 0; i--)
         if (str[i] == c)
