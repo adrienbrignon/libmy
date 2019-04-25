@@ -11,7 +11,6 @@
 
 Test(string, my_strdup)
 {
-    cr_assert_null(my_strdup(NULL));
     cr_assert_str_eq(my_strdup(""), "");
     cr_assert_str_eq(my_strdup("I like trains."), "I like trains.");
 }

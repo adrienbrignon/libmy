@@ -5,7 +5,7 @@
 ** Get the greatest integer.
 */
 
-int my_fmax(int x, int y)
+double my_fmax(double x, double y)
 {
     return x > y ? x : y;
 }
