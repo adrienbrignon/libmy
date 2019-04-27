@@ -17,11 +17,12 @@ static void redirect_std(void)
 
 Test(stdio, my_printf, .init = redirect_std)
 {
-    cr_assert_eq(6, my_printf("Hello "));
-    cr_assert_eq(2, my_printf("%d", 42));
-    cr_assert_eq(5, my_printf(" %s", "cars"));
-    cr_assert_eq(7, my_printf(" %i mph", 21 * 2));
-    cr_assert_eq(2, my_printf("%."));
-    cr_assert_eq(0, my_printf(""));
-    cr_assert_stdout_eq_str("Hello 42 cars 42 mph%.");
+    cr_assert_eq(my_printf("Hello "), 6);
+    cr_assert_eq(my_printf("%d", 42), 2);
+    cr_assert_eq(my_printf(" %s", "cars"), 5);
+    cr_assert_eq(my_printf(" %i mp", 42), 6);
+    cr_assert_eq(my_printf("%c", 'h'), 1);
+    cr_assert_eq(my_printf(""), 0);
+    cr_assert_eq(my_printf("%c", '\n'), 1);
+    cr_assert_stdout_eq_str("Hello 42 cars 42 mph\n");
 }

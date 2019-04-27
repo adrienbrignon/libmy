@@ -26,5 +26,6 @@ int my_printf(const char *format, ...);
 int my_printf_call(char c, va_list *list);
 int my_printf_callback_s(va_list *list);
 int my_printf_callback_d(va_list *list);
+int my_printf_callback_c(va_list *list);
 
 #endif
