@@ -6,7 +6,7 @@
 ##
 
 CC = gcc
-CFLAGS = -Wall -Werror -Wextra -pedantic -Iinclude -O2 -pipe
+CFLAGS = -Wall -Wextra -pedantic -Iinclude -O2 -pipe
 LDFLAGS = -L.
 LDLIBS = -lmy
 

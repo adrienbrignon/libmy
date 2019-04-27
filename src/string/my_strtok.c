@@ -20,7 +20,7 @@ char *my_strtok(char *str, const char *delim)
     ptr = str + my_strcspn(str, delim);
 
     if (ptr == str)
-        return ptr = MY_NULL;
+        return (ptr = MY_NULL);
     else if (*ptr != '\0')
         *ptr++ = '\0';
 

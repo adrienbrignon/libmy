@@ -9,5 +9,5 @@
 
 char my_tolower(char c)
 {
-    return my_isupper(c) ? c + ('a' - 'A') : c;
+    return my_isupper(c) ? c + 0x20 : c;
 }
