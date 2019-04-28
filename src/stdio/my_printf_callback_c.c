@@ -11,7 +11,5 @@
 
 int my_printf_callback_c(va_list *list)
 {
-    char c = va_arg(*list, int);
-
-    return my_write(MY_STDOUT_FILENO, &c, 1);
+    return my_write(MY_STDOUT_FILENO, &(int) {va_arg(*list, int)}, 1);
 }
