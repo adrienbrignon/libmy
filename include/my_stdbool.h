@@ -5,10 +5,12 @@
 ** Boolean type.
 */
 
-#ifndef MY_STDBOOL_H_
-#define MY_STDBOOL_H_
+#ifndef MY_STDBOOL_H
+#define MY_STDBOOL_H
 
+#ifndef __my_bool_true_false_are_defined
 #define __my_bool_true_false_are_defined (1)
+#endif
 
 typedef enum {
     my_false = 0,

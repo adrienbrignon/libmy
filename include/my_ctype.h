@@ -5,23 +5,25 @@
 ** Character handling functions.
 */
 
-#ifndef MY_CTYPE_H_
-#define MY_CTYPE_H_
+#ifndef MY_CTYPE_H
+#define MY_CTYPE_H
 
-int my_isalnum(char c);
-int my_isdigit(char c);
-int my_isalpha(char c);
-int my_isupper(char c);
-int my_isblank(char c);
-int my_islower(char c);
-int my_isprint(char c);
-int my_isspace(char c);
-int my_iscntrl(char c);
-int my_isgraph(char c);
-int my_ispunct(char c);
-int my_isxdigit(char c);
+#include "my_config.h"
 
-char my_tolower(char c);
-char my_toupper(char c);
+MY_API int my_isalnum(char c);
+MY_API int my_isdigit(char c);
+MY_API int my_isalpha(char c);
+MY_API int my_isupper(char c);
+MY_API int my_isblank(char c);
+MY_API int my_islower(char c);
+MY_API int my_isprint(char c);
+MY_API int my_isspace(char c);
+MY_API int my_iscntrl(char c);
+MY_API int my_isgraph(char c);
+MY_API int my_ispunct(char c);
+MY_API int my_isxdigit(char c);
+
+MY_API char my_tolower(char c);
+MY_API char my_toupper(char c);
 
 #endif

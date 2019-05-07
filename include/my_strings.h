@@ -5,15 +5,16 @@
 ** String operations.
 */
 
+#ifndef MY_STRINGS_H
+#define MY_STRINGS_H
+
+#include "my_config.h"
 #include "my_stddef.h"
 
-#ifndef MY_STRINGS_H_
-#define MY_STRINGS_H_
+MY_API int my_strcasecmp(const char *s1, const char *s2);
+MY_API int my_strncasecmp(const char *s1, const char *s2, my_size_t n);
 
-int my_strcasecmp(const char *s1, const char *s2);
-int my_strncasecmp(const char *s1, const char *s2, my_size_t n);
-
-char *my_index(const char *str, char c);
-char *my_rindex(const char *str, char c);
+MY_API char *my_index(const char *str, char c);
+MY_API char *my_rindex(const char *str, char c);
 
 #endif

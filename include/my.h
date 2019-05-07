@@ -8,6 +8,7 @@
 #ifndef MY_H_
 #define MY_H_
 
+#include "my_config.h"
 #include "my_stddef.h"
 #include "my_math.h"
 #include "my_ctype.h"
