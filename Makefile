@@ -6,7 +6,8 @@
 ##
 
 CC = gcc
-CFLAGS = -Wall -Wextra -pedantic -Iinclude -O2 -pipe
+CFLAGS = -Iinclude -O2 -pipe
+CFLAGS += -Wall -Wextra -Wshadow -Wuninitialized -Wformat-security
 LDFLAGS = -L.
 LDLIBS = -lmy
 

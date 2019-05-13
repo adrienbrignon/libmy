@@ -7,12 +7,12 @@
 
 #include "my_stddef.h"
 
-void *my_memset(void *dest, char c, my_size_t size)
+void *my_memset(void *dest, int c, my_size_t size)
 {
-    unsigned char *ptr = dest;
+    unsigned char *ptr = (unsigned char *) dest;
 
     while (size-- > 0)
-        *ptr++ = (unsigned char) c;
+        *ptr++ = c;
 
     return dest;
 }

@@ -19,10 +19,10 @@ MY_API my_size_t my_strlen(const char *str);
 MY_API my_size_t my_strspn(const char *str, const char *mask);
 MY_API my_size_t my_strcspn(const char *str, const char *mask);
 
-MY_API void *my_memset(void *dest, char c, my_size_t size);
+MY_API void *my_memset(void *dest, int c, my_size_t size);
 MY_API void *my_memcpy(void *dest, const void *src, my_size_t size);
 MY_API void *my_memmove(void *dest, const void *src, my_size_t size);
-MY_API void *my_memchr(const void *haystack, char needle, my_size_t size);
+MY_API void *my_memchr(const void *haystack, int needle, my_size_t size);
 
 MY_API char *my_strrev(char *str);
 MY_API char *my_strupr(char *str);

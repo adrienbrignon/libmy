@@ -7,13 +7,13 @@
 
 #include "my_stddef.h"
 
-void *my_memchr(const void *haystack, char needle, my_size_t size)
+void *my_memchr(const void *haystack, int needle, my_size_t size)
 {
-    unsigned char *ptr = (unsigned char *) haystack;
+    const unsigned char *ptr = (const unsigned char *) haystack;
 
     while (size-- > 0) {
-        if (*ptr == (unsigned char) needle)
-            return ptr;
+        if (*ptr == needle)
+            return (void *) ptr;
 
         ptr++;
     }
