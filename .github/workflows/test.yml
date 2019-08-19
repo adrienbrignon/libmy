@@ -1,14 +1,13 @@
-name: C/C++ CI
+name: Continuous Integration
 
 on: [push]
 
 jobs:
-  build:
-
+  test:
     runs-on: ubuntu-latest
-    
     steps:
     - uses: actions/checkout@v1
+    - use: docker://adrienbrignon:epitech-c
     - name: make
       run: make
     - name: make test
