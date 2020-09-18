@@ -17,8 +17,6 @@ static void redirect_std(void)
 
 Test(stdio, my_puts, .init = redirect_std)
 {
-    int printed = my_puts("Hello world!");
-
-    cr_assert_eq(printed, 13);
+    cr_assert_eq(my_puts("Hello world!"), 13);
     cr_assert_stdout_eq_str("Hello world!\n");
 }
